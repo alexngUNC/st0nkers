@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonkers</title>
+    <link rel='stylesheet' href='styles.css' />
+</head>
+<style>
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h3 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  p {
+    text-align: center;
+    padding: 5px;
+  }
+</style>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <img src="NtropySVG.svg" alt="ogo" class="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="list.html">List</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <h1>Stonkers</h1>
+  <h3>Find up-to-date prices and market data for any stock!</h3>
+
+  <p>Enter up to five stock symbols (all-caps) one at a time (you must enter a stock symbol before viewing your list). </p>
+  <p>Click the "Clear List" button to clear your list.</p>
+  <p>Click the "See Table" button or "Stock Table" tab to see the table for the last stock you entered.</p>
+  <p>After you see the table of a stock, use the back button of your browser to return to your list or the home page. </p>
+
+  <div class="searchBar">
+    <form method="post">
+      <label for="stock">Enter Symbol:</label>
+      <input type="text" name="stock">
+      <button type="submit"> Add to List</button>
+      <a href="http://127.0.0.1:5000/stock_table">See Table</a>
+      <br />
+    </form> <br>
+    <form method='get'>
+        <button type="submit">Clear List</button>
+    </form>
+  </div>
+</body>
+</html>
